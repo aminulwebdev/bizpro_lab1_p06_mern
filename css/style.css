@@ -4,6 +4,7 @@
         --font: 'Nunito', sans-serif;
         --bg_clr: #ECF9FF;
         --Paragraph: #9090A7;
+
 }
 
 /* ==============================
@@ -452,17 +453,154 @@ p {
 
 
 /* ==============================
+        Package Part Start
+================================= */
+#package {
+        padding: 110px 0;
+        background: var(--bg_clr);
+}
+
+.package__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+
+
+.package_navigator {
+        display: flex;
+        width: 126px;
+        height: 66px;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: #FFF;
+
+}
+
+.prev,
+.next {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all linear .3s;
+        color: var(--Paragraph);
+        cursor: pointer;
+
+}
+
+.prev:hover,
+.next:hover {
+        background: #00E5CC;
+        color: var(--white);
+}
+
+.package__content__wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        padding-top: 75px;
+}
+
+.package__content__item {
+        width: 370px;
+        padding: 16px 16px 20px 16px;
+        border-radius: 14px;
+        border: 1px solid var(--white);
+        background: rgba(255, 255, 255, 0.20);
+        transition: all linear .2s;
+        cursor: pointer;
+}
+
+.package__content__item:hover {
+        border-radius: 14px;
+        border: 1px solid #FFF;
+        background: #FFF;
+        box-shadow: 0px 10px 70px 0px rgba(2, 2, 38, 0.06);
+}
+
+.content__item__img {
+        width: 100%;
+        height: 273px;
+        overflow: hidden;
+        border-radius: 10px;
+}
+
+.content__item__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.package__content__item h3 {
+        padding: 20px 0 15px;
+}
+
+.item__user {
+        display: flex;
+        align-items: center;
+        column-gap: 54px;
+        position: relative;
+}
+
+.user_one,
+.user_two,
+.user_three {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 2px solid var(--white);
+}
+
+.user_one img,
+.user_two img,
+.user_three img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+}
+
+.user_two {
+        position: absolute;
+        top: 0;
+        left: 7%;
+}
+
+.user_three {
+        position: absolute;
+        top: 0;
+        left: 14%;
+}
+
+.user__number {
+        display: flex;
+        align-items: center;
+        column-gap: 112px;
+}
+
+
+/* ==============================
+        Package Part End
+================================= */
+
+
+/* ==============================
         Common Part Start
 ================================= */
 /* ==============================
         Common Part End
 ================================= */
-/* ==============================
-        Common Part Start
-================================= */
-/* ==============================
-        Common Part End
-================================= */
+
+
+
 /* ==============================
         Common Part Start
 ================================= */

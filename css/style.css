@@ -42,6 +42,15 @@ p {
         margin: 0 auto;
 }
 
+.section__heading {
+        color: var(--primary_clr);
+        font-family: var(--font);
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 55px;
+        /* 122.222% */
+}
 
 .paragraph {
         color: var(--Paragraph);
@@ -71,19 +80,20 @@ p {
 /* ==============================
         Navbar Part Start
 ================================= */
-#navbar{
+#navbar {
         position: absolute;
         top: 50px;
         left: 0;
         width: 100%;
         z-index: 99;
 }
+
 .nav__wrapper {
-      display: flex;
-      align-items: center;
-      padding: 22px  22px 22px 35px;
-      background-color: var(--white);
-      border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 22px 22px 22px 35px;
+        background-color: var(--white);
+        border-radius: 10px;
 }
 
 
@@ -153,7 +163,7 @@ p {
 .banner__wrapper {
         display: flex;
         column-gap: 77px;
-     
+
 }
 
 .banner__content {
@@ -218,10 +228,11 @@ p {
         color: #00E5CC;
 }
 
-.quote__reviews{
+.quote__reviews {
         display: flex;
         align-items: center;
 }
+
 .quote__reviews i {
         font-size: 14px;
         margin-right: 5px;
@@ -287,11 +298,79 @@ p {
 
 
 /* ==============================
-        Common Part Start
+        Works Part Start
 ================================= */
+#works {
+        padding: 110px 0;
+}
+
+.works__wrapper .section__heading {
+        text-align: center;
+        padding-bottom: 12px;
+}
+
+.works__wrapper .paragraph {
+        width: 431px;
+        margin: 0 auto;
+        text-align: center;
+
+}
+
+.work__content {
+        display: flex;
+        column-gap: 30px;
+}
+
+.work__content__item {
+        width: 370px;
+        border-radius: 14px;
+        border: 2px solid rgba(6, 6, 64, 0.04);
+        padding: 30px;
+        cursor: pointer;
+        transition: all linear .3s;
+}
+
+.work__content__item:hover {
+        border: 2px solid transparent;
+        background: #FFF;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.work__content__item h3 {
+        color: var(--primary_clr);
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        /* 141.667% */
+        padding: 50px 0 10px;
+}
+
+
+.item__img {
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        border-radius: 10px;
+        background: rgba(236, 249, 255, 0.80);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+
+.work__content {
+        padding-top: 70px;
+}
+
 /* ==============================
-        Common Part End
+        Works Part End
 ================================= */
+
+
 /* ==============================
         Common Part Start
 ================================= */

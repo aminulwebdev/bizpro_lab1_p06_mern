@@ -4,7 +4,6 @@
         --font: 'Nunito', sans-serif;
         --bg_clr: #ECF9FF;
         --Paragraph: #9090A7;
-
 }
 
 /* ==============================
@@ -13,7 +12,6 @@
 * {
         padding: 0;
         margin: 0;
-        /* outline: 0; */
         box-sizing: border-box;
 }
 
@@ -21,7 +19,6 @@ a {
         text-decoration: none;
         display: inline-block;
 }
-
 
 ul,
 ol {
@@ -50,7 +47,6 @@ p {
         font-style: normal;
         font-weight: 700;
         line-height: 55px;
-        /* 122.222% */
 }
 
 .sub__heading {
@@ -59,7 +55,6 @@ p {
         font-size: 20px;
         font-weight: 500;
         line-height: 28px;
-        /* 140% */
 }
 
 .paragraph {
@@ -70,22 +65,26 @@ p {
         line-height: 28px;
 }
 
-
 .common__btn {
         padding: 22px 38px;
         border-radius: 6px;
-        background: var(--primary_clr);
-        color: var(--white);
+        border: 1px solid var(--primary_clr);
+        color: var(--primary_clr);
         font-family: var(--font);
         font-size: 14px;
         font-weight: 500;
         line-height: 15px;
+        transition: all linear .3s;
+}
+
+.common__btn:hover {
+        background: var(--primary_clr);
+        color: var(--white);
 }
 
 /* ==============================
         Common Part End
 ================================= */
-
 
 /* ==============================
         Navbar Part Start
@@ -105,8 +104,6 @@ p {
         background-color: var(--white);
         border-radius: 10px;
 }
-
-
 
 .nav__logo {
         width: 20%;
@@ -130,6 +127,11 @@ p {
         font-weight: 500;
         line-height: 14px;
         text-transform: capitalize;
+        transition: all linear .3s;
+}
+
+.nav__link:hover {
+        color: #00E5CC;
 }
 
 .nav__btn {
@@ -174,7 +176,7 @@ p {
 .banner__wrapper {
         display: flex;
         column-gap: 77px;
-
+        position: relative;
 }
 
 .banner__content {
@@ -192,14 +194,12 @@ p {
 
 }
 
-
 .banner__btn {
         display: flex;
         align-items: center;
         column-gap: 30px;
         padding: 30px 0 70px;
 }
-
 
 .banner__play__btn i {
         width: 60px;
@@ -225,6 +225,11 @@ p {
         border-radius: 14px;
         background: rgba(255, 255, 255, 0.70);
         backdrop-filter: blur(5px);
+        transition: all linear .3s;
+}
+
+.banner__quote:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .banner__quote__icon {
@@ -263,13 +268,10 @@ p {
         font-weight: 500;
 }
 
-
-
 .banner__img {
         width: 747px;
         position: relative;
 }
-
 
 .banner__shape01 {
         position: absolute;
@@ -303,10 +305,27 @@ p {
         right: -16%;
 }
 
+.banner__ellipse {
+        position: absolute;
+        top: 3%;
+        left: 9%;
+}
+
+.banner__victory {
+        position: absolute;
+        top: 3%;
+        left: 9%;
+}
+
+.banner__victory {
+        position: absolute;
+        top: 27%;
+        left: 22%;
+}
+
 /* ==============================
         Banner Part End
 ================================= */
-
 
 /* ==============================
         Works Part Start
@@ -315,16 +334,25 @@ p {
         padding: 110px 0;
 }
 
-.works__wrapper .section__heading {
+.works__heading {
+        position: relative;
+}
+
+.works__heading .section__heading {
         text-align: center;
         padding-bottom: 12px;
 }
 
-.works__wrapper .paragraph {
+.works__heading .paragraph {
         width: 431px;
         margin: 0 auto;
         text-align: center;
+}
 
+.works__ellipse {
+        position: absolute;
+        top: -7px;
+        left: 53%;
 }
 
 .work__content {
@@ -359,7 +387,6 @@ p {
         padding: 50px 0 10px;
 }
 
-
 .item__img {
         width: 70px;
         height: 70px;
@@ -371,8 +398,6 @@ p {
         align-items: center;
 }
 
-
-
 .work__content {
         padding-top: 70px;
 }
@@ -380,7 +405,6 @@ p {
 /* ==============================
         Works Part End
 ================================= */
-
 
 /* ==============================
         About Part Start
@@ -396,6 +420,7 @@ p {
 .about__wrapper {
         display: flex;
         column-gap: 149px;
+        position: relative;
 }
 
 .about__content .section__heading {
@@ -425,6 +450,12 @@ p {
         color: #00aa63;
 }
 
+.about__ellipse {
+        position: absolute;
+        top: 10%;
+        left: 6%;
+}
+
 .about__img {
         width: 569px;
         height: 500px;
@@ -446,11 +477,27 @@ p {
         left: -29%;
 }
 
+.about__shape02 {
+        position: absolute;
+        top: -19%;
+        right: -5%;
+}
+
+.about__shape03 {
+        position: absolute;
+        bottom: 0%;
+        right: -5%;
+}
+
+.about__shape03 {
+        position: absolute;
+        bottom: -8%;
+        right: -4%;
+}
+
 /* ==============================
         About Part End
 ================================= */
-
-
 
 /* ==============================
         Package Part Start
@@ -464,9 +511,8 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
 }
-
-
 
 .package_navigator {
         display: flex;
@@ -478,7 +524,6 @@ p {
         gap: 10px;
         border-radius: 10px;
         background: #FFF;
-
 }
 
 .prev,
@@ -493,13 +538,18 @@ p {
         transition: all linear .3s;
         color: var(--Paragraph);
         cursor: pointer;
-
 }
 
 .prev:hover,
 .next:hover {
         background: #00E5CC;
         color: var(--white);
+}
+
+.package__ellipse {
+        position: absolute;
+        top: -3%;
+        left: 5%;
 }
 
 .package__content__wrapper {
@@ -531,12 +581,18 @@ p {
         height: 273px;
         overflow: hidden;
         border-radius: 10px;
+
 }
 
 .content__item__img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: all linear .3s;
+}
+
+.content__item__img img:hover {
+        transform: scale(1.06);
 }
 
 .package__content__item h3 {
@@ -586,18 +642,19 @@ p {
         column-gap: 112px;
 }
 
-
 /* ==============================
         Package Part End
 ================================= */
 
-
 /* ==============================
         Common Part Start
 ================================= */
-
 #promotion {
         padding: 110px 0 84px;
+}
+
+.promotion__heading {
+        position: relative;
 }
 
 .promotion__heading .section__heading {
@@ -609,6 +666,12 @@ p {
         width: 764px;
         text-align: center;
         margin: 0 auto;
+}
+
+.promotion__ellipse {
+        position: absolute;
+        top: -6%;
+        left: 49%;
 }
 
 .promotion__maps {
@@ -634,7 +697,6 @@ p {
         transform: translateX(-50%);
         cursor: pointer;
         transition: all linear .3s;
-
 }
 
 .promotion__shape01:hover {
@@ -688,7 +750,6 @@ p {
         cursor: pointer;
 }
 
-
 .promotion__direct02 img {
         position: absolute;
         top: 50%;
@@ -723,10 +784,8 @@ p {
         Common Part End
 ================================= */
 
-
-
 /* ==============================
-        Common Part Start
+        Newsletter Part Start
 ================================= */
 #newsletter {
         padding: 20px 0 110px;
@@ -742,6 +801,7 @@ p {
 .newsletter__content {
         width: 668px;
         margin-left: 60px;
+        position: relative;
 }
 
 .newsletter__content p {
@@ -751,23 +811,20 @@ p {
 
 .newsletter__form {
         width: 600px;
-
 }
 
 .newsletter__form__group {
         background-color: var(--bg_clr);
         border-radius: 6px;
-        /* overflow: hidden; */
         position: relative;
 }
 
 .newsletter__form__input {
         width: 100%;
-        padding: 31px 50px 31px 20px;
+        padding: 31px 175px 31px 20px;
         background: transparent;
         border: none;
         border-radius: 6px;
-
 }
 
 .newsletter__form__input:focus-visible {
@@ -776,12 +833,18 @@ p {
 }
 
 .newsletter__form__group button {
-        border: none;
+        background-color: transparent;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: 9px;
         cursor: pointer;
+}
+
+.newsletter__ellipse {
+        position: absolute;
+        top: -3%;
+        left: 34%;
 }
 
 .newsletter__img {
@@ -809,5 +872,108 @@ p {
 }
 
 /* ==============================
-        Common Part End
+        Newsletter Part End
+================================= */
+
+/* ==============================
+        Footer Part Start
+================================= */
+footer {
+        background: var(--primary_clr);
+        padding: 80px 0 0px;
+}
+
+.footer__wrapper {
+        display: flex;
+        column-gap: 150px;
+        padding-bottom: 48px;
+}
+
+.footer__content {
+        width: 350px;
+}
+
+.footer__content p {
+        padding: 20px 0;
+}
+
+.footer__social__icon {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+}
+
+.footer__social__icon i {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #817777;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #817777;
+        transition: all linear .3s;
+        cursor: pointer;
+}
+
+.footer__social__icon i:hover {
+        border: 1px solid #00E5CC;
+        color: #00E5CC;
+}
+
+.footer__list__wrapper {
+        width: 670px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+}
+
+.footer__list__content h5 {
+        color: var(--white);
+        font-family: var(--font);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        padding-bottom: 20px;
+}
+
+.footer__list__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+}
+
+.paragraph--lineHeight {
+        line-height: normal;
+}
+
+.footer__link {
+        transition: all linear .3s;
+}
+
+.footer__link:hover {
+        color: #00E5CC;
+}
+
+.footer__rights {
+        background: #000020;
+        padding: 27px 0;
+}
+
+.footer__rights__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.footer__rights__wrapper p {
+        color: var(--white);
+        font-family: var(--font);
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: capitalize;
+}
+
+/* ==============================
+        Footer Part End
 ================================= */

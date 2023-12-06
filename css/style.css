@@ -1,0 +1,318 @@
+:root {
+        --primary_clr: #060640;
+        --white: #fff;
+        --font: 'Nunito', sans-serif;
+        --bg_clr: #ECF9FF;
+        --Paragraph: #9090A7;
+}
+
+/* ==============================
+        Common Part Start
+================================= */
+* {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+}
+
+a {
+        text-decoration: none;
+        display: inline-block;
+}
+
+
+ul,
+ol {
+        list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+        line-height: .8;
+}
+
+.container {
+        width: 1170px;
+        margin: 0 auto;
+}
+
+
+.paragraph {
+        color: var(--Paragraph);
+        font-family: var(--font);
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 28px;
+}
+
+
+.common__btn {
+        padding: 22px 38px;
+        border-radius: 6px;
+        background: var(--primary_clr);
+        color: var(--white);
+        font-family: var(--font);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+}
+
+/* ==============================
+        Common Part End
+================================= */
+
+
+/* ==============================
+        Navbar Part Start
+================================= */
+#navbar{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+}
+.nav__wrapper {
+      display: flex;
+      align-items: center;
+      padding: 22px  22px 22px 35px;
+      background-color: var(--white);
+      border-radius: 10px;
+}
+
+
+
+.nav__logo {
+        width: 20%;
+}
+
+.nav__menu {
+        width: 50%;
+}
+
+.nav__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 25px;
+}
+
+.nav__link {
+        color: #828297;
+        font-family: var(--font);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        text-transform: capitalize;
+}
+
+.nav__btn {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 25px;
+}
+
+.nav__btn__item {
+        color: #000;
+        font-family: var(--font);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        text-transform: capitalize;
+        padding: 20px 30px;
+        transition: all linear .3s;
+}
+
+.nav__btn__item:hover {
+        background: var(--primary_clr);
+        border-radius: 6px;
+        color: var(--white);
+}
+
+/* ==============================
+        Navbar Part End
+================================= */
+
+/* ==============================
+        Banner Part Start
+================================= */
+#banner {
+        padding: 260px 0 110px;
+        background: var(--bg_clr);
+        position: relative;
+}
+
+.banner__wrapper {
+        display: flex;
+        column-gap: 77px;
+     
+}
+
+.banner__content {
+        width: 423px;
+}
+
+.banner__content h1 {
+        color: var(--primary_clr);
+        font-family: var(--font);
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 65px;
+        width: 423px;
+        padding: 20px 0 20px;
+
+}
+
+
+.banner__btn {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        padding: 30px 0 70px;
+}
+
+
+.banner__play__btn i {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: #00E5CC;
+        background-color: var(--white);
+        /* drop-shadow: (0px 10px 30px rgba(0, 229, 204, 0.10)); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all linear .3s;
+}
+
+.banner__play__btn i:hover {
+        background: var(--primary_clr);
+        color: var(--white);
+}
+
+.banner__quote {
+        padding: 23px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.70);
+        backdrop-filter: blur(5px);
+}
+
+.banner__quote__icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+}
+
+.banner__quote__icon i {
+        font-size: 30px;
+        color: #00E5CC;
+}
+
+.quote__reviews{
+        display: flex;
+        align-items: center;
+}
+.quote__reviews i {
+        font-size: 14px;
+        margin-right: 5px;
+        color: #FFBF00;
+}
+
+.quote__reviews .paragraph {
+        color: var(--primary_clr);
+}
+
+.paragraph--fontsize {
+        font-size: 14px;
+        line-height: 24px;
+}
+
+.span--weight {
+        font-weight: 500;
+}
+
+
+
+.banner__img {
+        width: 747px;
+        position: relative;
+}
+
+
+.banner__shape01 {
+        position: absolute;
+        top: 29%;
+        left: -9%;
+}
+
+.banner__shape01 img,
+.banner__shape02 img,
+.banner__shape03 img {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 10px;
+}
+
+.banner__shape02 {
+        position: absolute;
+        top: 69%;
+        left: 38%;
+}
+
+.banner__shape03 {
+        position: absolute;
+        top: 40%;
+        right: -12%;
+
+}
+
+.banner__shape04 {
+        position: absolute;
+        top: -14%;
+        right: -16%;
+}
+
+/* ==============================
+        Banner Part End
+================================= */
+
+
+/* ==============================
+        Common Part Start
+================================= */
+/* ==============================
+        Common Part End
+================================= */
+/* ==============================
+        Common Part Start
+================================= */
+/* ==============================
+        Common Part End
+================================= */
+/* ==============================
+        Common Part Start
+================================= */
+/* ==============================
+        Common Part End
+================================= */
+/* ==============================
+        Common Part Start
+================================= */
+/* ==============================
+        Common Part End
+================================= */
+/* ==============================
+        Common Part Start
+================================= */
+/* ==============================
+        Common Part End
+================================= */
